@@ -4,10 +4,6 @@ import base64
 from io import BytesIO
 from PIL import Image
 
-# Setup 1080p
-width = 1920
-height = 1080
-
 os.environ["PYLON_CAMEMU"] = "1"
 
 cam = py.InstantCamera(py.TlFactory.GetInstance().CreateFirstDevice())
@@ -22,7 +18,7 @@ cam.ImageFileMode = "On"
 cam.TestImageSelector = "Off"
 
 # choose one pixel format. camera emulation does conversion on the fly
-cam.PixelFormat = "Mono8"
+cam.PixelFormat = "RGB8Packed"
 
 cam.StartGrabbing()
 
