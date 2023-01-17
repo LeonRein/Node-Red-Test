@@ -19,6 +19,8 @@ docker build \
     --build-arg TAG_SUFFIX=default \
     --file Dockerfile.debian \
     --tag node-red-debian:latest .
+    
+cd $CUR_DIR
 
 # Starting docker compose, to build custom docker image with node red and pypylon
 docker compose up
