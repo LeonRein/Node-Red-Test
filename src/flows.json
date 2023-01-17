@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a29eca39e3a1b62f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bb9067d6eafa108b",
+        "type": "daemon",
+        "z": "a29eca39e3a1b62f",
+        "name": "",
+        "command": "/usr/src/node-red/camera.sh",
+        "args": "",
+        "autorun": true,
+        "cr": false,
+        "redo": true,
+        "op": "string",
+        "closer": "SIGKILL",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "4fa6996c8d686423"
+            ],
+            [
+                "ec0b2e7f082c8f5e"
+            ],
+            [
+                "dfc97ceba0e0e514"
+            ]
+        ]
+    },
+    {
+        "id": "4fa6996c8d686423",
+        "type": "image",
+        "z": "a29eca39e3a1b62f",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 480,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ec0b2e7f082c8f5e",
+        "type": "debug",
+        "z": "a29eca39e3a1b62f",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "dfc97ceba0e0e514",
+        "type": "debug",
+        "z": "a29eca39e3a1b62f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 420,
+        "wires": []
+    }
+]
