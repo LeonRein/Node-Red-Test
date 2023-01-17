@@ -38,7 +38,7 @@
         "type": "image",
         "z": "a29eca39e3a1b62f",
         "name": "",
-        "width": 160,
+        "width": "500",
         "data": "payload",
         "dataType": "msg",
         "thumbnail": false,
@@ -62,7 +62,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 460,
-        "y": 380,
+        "y": 600,
         "wires": []
     },
     {
@@ -78,7 +78,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 460,
-        "y": 420,
+        "y": 640,
         "wires": []
     }
 ]
